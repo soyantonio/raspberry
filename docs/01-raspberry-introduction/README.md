@@ -164,30 +164,31 @@ sudo nano /etc/wpa_supplicant/wpa_supplicant.conf
 ````
 
 3. Add network configuration
-   - Wireless network `wpa_passphrase "network_name"`
-    ```shell
-    network={
-      ssid="network_name"
-      scan_ssid=1
-      psk=e647e6a0df46537ad98c7687fa75fa33f0e0489f80fec9ed0180058647724073
-    }
-    ```
-   - PEAP network `echo -n "plaintext_password" | iconv -t utf16le | openssl md4`
-    ```shell
-    network={
-      ssid="<<network_name>>"
-      priority=1
-      proto=RSN
-      key_mgmt=WPA-EAP
-      pairwise=CCMP
-      auth_alg=OPEN
-      eap=PEAP
-      identity="<<user_name>>"
-      password=hash:<<the_hash>>
-      phase1="peaplabel=0"
-      phase2="auth=MSCHAPV2"
-    }
-    ```
+
+Wireless network `wpa_passphrase "network_name"`
+```shell
+network={
+  ssid="network_name"
+  scan_ssid=1
+  psk=e647e6a0df46537ad98c7687fa75fa33f0e0489f80fec9ed0180058647724073
+}
+```
+ PEAP network `echo -n "plaintext_password" | iconv -t utf16le | openssl md4`
+```shell
+network={
+  ssid="<<network_name>>"
+  priority=1
+  proto=RSN
+  key_mgmt=WPA-EAP
+  pairwise=CCMP
+  auth_alg=OPEN
+  eap=PEAP
+  identity="<<user_name>>"
+  password=hash:<<the_hash>>
+  phase1="peaplabel=0"
+  phase2="auth=MSCHAPV2"
+}
+ ```
 4. Apply changes
 ````shell
 sudo reboot
