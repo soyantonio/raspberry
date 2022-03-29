@@ -12,6 +12,11 @@ Table of contents
   * [Friendly orientation](#friendly-orientation)
   * [Interactive guide](#interactive-guide)
   * [Other considerations](#other-considerations)
+- [Setup](#setup)
+  * [Requirements](#requirements)
+  * [Installation Steps](#installation-steps)
+  * [Login instructions](#login-instructions)
+  * [Wi-Fi instructions](#wi-fi-instructions)
 
 <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
