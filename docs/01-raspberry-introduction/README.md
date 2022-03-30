@@ -194,6 +194,43 @@ network={
 sudo reboot
 ````
 
+Switch a LED
+------------
+
+1. Open a python shell
+````shell
+python
+````
+2. Declare LED
+````python
+from gpiozero import LED
+led = LED(14)
+````
+3. Turn on LED
+````python
+led.on()
+````
+4. Turn off LED
+````python
+led.off()
+````
+5. Exit
+````python
+exit()
+````
+
+VSCode setup
+------------
+1. Download [VS Code](https://code.visualstudio.com/docs/?dv=win)
+2. Install [Remote SSH Extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh)
+3. Add ssh project
+4. Open workspace folder 
+5. Run python scripts as `python blink_simple.py`
+
+Other resources
+---------------
+https://github.com/raspberrypilearning/physical-computing-guide/blob/master/pull_up_down.md
+https://gpiozero.readthedocs.io/en/stable/
 
 [//]: # (References)
 [1]: https://www.raspberrypi.com/documentation/computers/processors.html#bcm2837
