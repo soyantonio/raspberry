@@ -227,10 +227,27 @@ VSCode setup
 4. Open workspace folder 
 5. Run python scripts as `python blink_simple.py`
 
+Node-RED installation
+---------------------
+````shell
+bash <(curl -sL https://raw.githubusercontent.com/node-red/linux-installers/master/deb/update-nodejs-and-nodered)
+````
+Then you can start the service with
+````shell
+node-red-start
+````
+More details at https://nodered.org/docs/getting-started/raspberrypi
+
 Other resources
 ---------------
 https://github.com/raspberrypilearning/physical-computing-guide/blob/master/pull_up_down.md
 https://gpiozero.readthedocs.io/en/stable/
+
+### System monitor
+````shell
+htop
+````
+
 
 [//]: # (References)
 [1]: https://www.raspberrypi.com/documentation/computers/processors.html#bcm2837
